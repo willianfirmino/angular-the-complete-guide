@@ -1,0 +1,8 @@
+<div
+  class="alert alert-danger"
+  role="alert"
+  [ngStyle]="{backgroundColor: getColor()}">
+
+  <h4 [ngClass]="{online: serverStatus === 'online'}">Server with ID {{ serverId }} is {{ getServerStatus() }} </h4>
+
+</div>
